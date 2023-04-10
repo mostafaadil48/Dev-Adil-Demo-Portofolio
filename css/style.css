@@ -1,0 +1,746 @@
+/*--------- Default Css --------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.white{
+    background: white;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+/*--------- Default Css end --------- */
+/*----------- navbar css start ---------------*/
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler:active{
+    outline: none;
+    box-shadow: none;
+    border: 0px;
+}
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler{
+    border: 0;
+}
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: red;
+    display: block;
+    transition: 0.2s all ease-in-out;
+}
+.middle-bar{
+    margin: 5px auto;
+}
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: #7f00ff;
+}
+/*----------- navbar css end ---------*/
+/*--------- top-header Css --------- */
+.top-header{
+    background: #f3f5f8;
+
+}
+.navbar-brand{
+    transition: .3s all ease-in-out;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+.nav-link{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+.nav-link:hover, .nav-link:focus{
+    color: #7f00ff;
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    width: 0%;
+    height: 3px;
+    background-color: #7f00ff;
+    transition: all 0.4s ease-in-out 0s;
+}
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/*--------- top-header Css end --------- */
+/*--------- banner Css start --------- */
+.banner{
+    background: #f3f5f8;
+    position: relative;
+}
+.banner-vh{
+    min-height: 80vh;
+}
+.banner-content h5{
+    color: #6e6e6e;
+    font-size: 25px;
+}
+.top-line{
+    display: block;
+    position: relative;
+    font-size: 25px;
+    color: #3d535f;
+    font-weight: 500;
+}
+.top-line::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: #7f00ff;
+    bottom: 9px;
+
+}
+.banner-content h1{
+    font-size: 45px;
+    margin: 15px 0;
+}
+.banner-content h3{
+    color: #3d535f;
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.banner-content h3 span{
+    color: #7f00ff;
+}
+.btn-hire{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 700;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #fff;
+    background: #7f00ff;
+    box-shadow: 0 0 10px #7f00ff;
+    margin-top: 30px;
+}
+.btn-hire:hover{
+    background: #f3f5f8;
+    color: #7f00ff;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7f00ff+0,ffc0cb+68 */
+    background: rgb(127,0,255); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(127,0,255,1) 0%, rgba(255,192,203,1) 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(127,0,255,1) 0%,rgba(255,192,203,1) 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(127,0,255,1) 0%,rgba(255,192,203,1) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f00ff', endColorstr='#ffc0cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    animation: object1 6s linear infinite;
+}
+.banner::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a24cff+0,ffc0cb+68 */
+    background: rgb(162,76,255); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(162,76,255,1) 0%, rgba(255,192,203,1) 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(162,76,255,1) 0%,rgba(255,192,203,1) 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(162,76,255,1) 0%,rgba(255,192,203,1) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a24cff', endColorstr='#ffc0cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+.c-z{
+    z-index: 5;
+}
+/*--------- banner Css end --------- */
+
+/*--------- about Css --------- */
+.about{
+    padding: 50px 0;
+}
+.about-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.about-head{
+    position: relative;
+}
+.about-head .title::before{
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about-head .title::after{
+    content: 'who i am';
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    font-size: 20px;
+    color: #7f00ff;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about img{
+    border-radius: 50px 10px;
+    transition: .4s all ease-in-out;
+}
+.about img:hover{
+    border-radius: 10px 50px;
+}
+.about-info{
+    padding: 0 30px 0px 50px;
+}
+.about-info h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.about-info h2 span{
+    color: #7f00ff;
+}
+/*--------- about Css end --------- */
+
+/*--------- services Css --------- */
+.services{
+    padding: 50px 0;
+    background: #f3f5f8;
+    position: relative;
+}
+.services-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.services-head{
+    position: relative;
+}
+.services-head .title::before{
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.services-head .title::after{
+    content: 'what i provide';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    font-size: 20px;
+    color: #7f00ff;
+    padding: 5px;
+    background: #f3f5f8;
+    transform: translateX(-50%);
+}
+.services-card{
+    padding: 25px;
+    height: 362px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+}
+.services-card-content{
+text-align: center;
+}
+.services-card-content i{
+    font-size: 50px;
+    color: #7f00ff;
+}
+.services-card-content h2{
+
+color: #3d535f;
+
+font-weight: 700;
+margin: 10px 0;
+}
+.btn-more{
+    background: pink;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #3d535f;
+    transition: .3s all ease-in-out;
+}
+.btn-more:hover{
+    background: #7f00ff;
+    color: #fff;
+}
+
+.services::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 30%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7f00ff+0,ffc0cb+68 */
+    background: rgb(127,0,255); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(127,0,255,1) 0%, rgba(255,192,203,1) 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(127,0,255,1) 0%,rgba(255,192,203,1) 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(127,0,255,1) 0%,rgba(255,192,203,1) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f00ff', endColorstr='#ffc0cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    animation: object3 6s linear infinite;
+}
+.services::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 39%;
+    top: 40%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a24cff+0,ffc0cb+68 */
+    background: rgb(162,76,255); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(162,76,255,1) 0%, rgba(255,192,203,1) 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(162,76,255,1) 0%,rgba(255,192,203,1) 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(162,76,255,1) 0%,rgba(255,192,203,1) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a24cff', endColorstr='#ffc0cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    animation: object4 6s linear infinite;
+}
+@keyframes object3{
+    50%{
+        left: -13%;
+        top: 35%;
+    }
+}
+@keyframes object4{
+    50%{
+        left: 45%;
+        top: 40%;
+    }
+}
+.c-z{
+    z-index: 5;
+}
+/*--------- services Css end --------- */
+/*------------ Skils Css  ---------- */
+.sklis{
+
+padding: 40px 0;
+}
+.sklis-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sklis-head{
+    position: relative;
+}
+.sklis-head .title::before{
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.sklis .title::after{
+    content: 'what i know';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    font-size: 20px;
+    color: #7f00ff;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.skils-details{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.skils-details h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: .3s all ease-in-out;
+}
+.skils-details  h2:hover{
+color: #7f00ff;
+}
+.skils-details p{
+    padding: 0 90px;
+}
+.skills-area{
+    text-align: center;
+    margin: 0;
+}
+/*--------- Skils Css end --------- */
+/*--------- choose Css  --------- */
+.choose{
+    padding: 40px 0;
+}
+
+.choose-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.choose-head{
+    position: relative;
+    margin-bottom: 10px;
+}
+.choose-head .title::before{
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.choose .title::after{
+    content: 'because';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    font-size: 20px;
+    color: #7f00ff;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.choose-card{
+    padding: 25px;
+    height: 250px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-card-content {
+
+text-align: center;
+}
+.choose-card-content span{
+
+font-size: 65px;
+
+font-weight: 600;
+
+text-align: center;
+
+color: #7f0fff;
+}
+.choose-card-content h5{
+
+font-size: 15px;
+
+font-weight: 600;
+}
+.choose-card-content i{
+font-size: 50px;
+display: block;
+text-align: center;
+color: #3d535f;
+}
+/*--------- choose Css end --------- */
+/*--------- portfolio Css  --------- */
+.portfolio{
+    padding: 50px 0;
+    background: #f3f5f8;
+}
+.portfolio-head {
+    margin-bottom: 50px;
+}
+.portfolio-head span{ 
+    display: inline-block; 
+    background: #7f00ff;  
+    height: 4px;  
+    width: 10%;
+}
+.portfolio-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.portfolio-main{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px !important;
+    text-align: center;
+    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
+}
+.portfolio-main img{
+    border-radius: 20px;
+    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
+}
+.portfolio-main h4{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.portfolio-main .btn-portfolio{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    text-align: center;
+    padding: 7px 12px;
+    background: #f3f5f8;
+    box-shadow: 0 0 10px #f3f5f8;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+.portfolio-main::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(76, 112, 153, 0) 0%, rgba(76, 111, 153, 0) 1%, rgb(54, 34, 111) 100%);
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 20px;
+}
+.portfolio-main:hover h4{
+    top: 50%;
+    opacity: 1;
+}
+.portfolio-main:hover .btn-portfolio{
+    opacity: 1;
+    top: 68%;
+}
+.portfolio-main:hover::before {
+    height: 100%;
+    border-radius: 20px;
+}
+/*--------- portfolio Css end --------- */
+/*------------- contact Css ---------- */
+.contact{
+    padding: 50px 0px;
+}
+.contact-head{
+    margin-bottom: 30px;
+}
+.contact-head span {
+    display: inline-block; 
+    background: #7f00ff;  
+    height: 4px;  
+    width: 10%;
+}
+.contact-head h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.conatact-main-head{
+    margin-bottom: 25px;
+
+}
+.conatact-main-head h4{
+    color: #7f00ff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.contact-info-last{
+    transition: .4s all ease-in-out;
+}
+.contact-info-last:hover{
+    transform: scale(1.1);
+
+}
+.conatact-main-head p{
+    font-size: 18px;
+}
+.contact-info{
+    margin-top: 40px;
+}
+.contact-info-first{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.contact-info-first i{
+    color: #7f00ff;
+    margin-right: 15px;
+    font-size: 25px;
+    transition: .3s all ease-in-out;
+}
+.contact-info-first i:hover{
+    transform: scale(1.4);
+}
+.contact-social{
+    width: 50%;
+    margin-top: 50px;
+}
+.contact-social ul{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-social ul li{
+    list-style: none;
+    transition: .3s all ease-in-out;
+}
+.contact-social ul li a{
+    color: #7f00ff;
+}
+.contact-social ul li a i{
+    font-size: 30px;
+}
+.contact-social li:hover{
+    transform: scale(1.4);
+}
+form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f3f5f8;
+    padding: 15px 15px;
+    margin: 10px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form input[type='submit']{
+    width: 23%;  
+    background: #7f00ff;  
+    box-shadow: 0 0 10px #7f00ff;  
+    color: #fff;  
+    font-weight: 600; 
+    font-size: 20px;
+    padding: 10px;
+    transition: .4s all ease-in-out;
+}
+form input[type='submit']:hover{
+    background: #fff;  
+    box-shadow: 0 0 10px #000;  
+    color: #7f00ff; 
+}
+
+.contact-small{
+    margin-bottom: 30px;
+    display: none;
+}
+.contact-small span {
+    display: inline-block; 
+    background: #7f00ff;  
+    height: 4px;  
+    width: 10%;
+}
+.contact-small h1{
+    color: #3d535f;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*--------- contact Css end --------- */
+/*----------- footer Css  ----------- */
+.footer{
+    padding: 20px 0;
+    background: #f3f5f8;
+}
+.footer p{
+    color: #605e5e;
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer a{
+    text-decoration: none;
+    color: #000000;
+    transition: .3s all ease-in-out;
+}
+.footer a:hover{
+    color: #7f0fff;
+}
+
+/*--------- footer Css end --------- */

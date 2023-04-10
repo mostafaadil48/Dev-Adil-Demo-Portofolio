@@ -1,0 +1,236 @@
+@media(max-width:2560px) {
+    .banner-vh {
+        min-height: 40vh;
+    }
+    .banner::before {
+        left: 25%;
+    }
+    @keyframes object1{
+        50%{
+            left: 27%;
+            top: 41%;
+        }
+    }
+    .services::before {
+        left: 20%;
+    }
+    @keyframes object3{
+    50%{
+        left: 22%;
+        top: 35%;
+    }
+}
+}
+@media(max-width:2560px) {
+    .banner-vh {
+        min-height: 50vh;
+    }
+}
+@media(max-width:1920px) {
+    .banner-vh {
+        min-height: 55vh;
+    }
+}
+@media(max-width:1440px) {
+    .banner-vh {
+        min-height: 80vh;
+    }
+    .banner::before {
+        left: -12%;
+    }
+    @keyframes object3{
+        50%{
+            left: -13%;
+            top: 35%;
+        }
+    }
+    @keyframes object1{
+        50%{
+            left: -13%;
+            top: 41%;
+        }
+    }
+    .services::before {
+        left: -12%;
+    }
+    
+
+}
+@media(max-width:1024px) {
+    .services-card-content h2 {
+        font-size: 23px;
+    }
+}
+@media(max-width:991px) {
+    .nav-item {
+        text-align: center;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .nav-link:hover {
+        display: inline-block;
+    }
+    .banner-vh {
+        min-height: 56vh;
+    }
+    .banner::before {
+        height: 350px;
+        width: 350px;
+        top: 13%;
+    }
+    @keyframes object1{
+        50%{
+            left: -13%;
+            top: 20%;
+        }
+    }
+    .about-info {
+        padding: 0;
+    }
+    .services-card {
+        padding: 0;
+        height: 400px;
+        margin: 0;
+    }
+    .portfolio-main {
+        width: 100%;
+        margin: auto;
+    }
+    .choose-card {
+        margin: 30px 0;
+    }
+    form input[type='submit'] {
+        width: 35%;
+    }
+
+}
+@media(max-width:767px) {
+
+    /* banner */
+    .banner-content {
+        margin-top: 45px;
+    }
+    .about img {
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .banner::before {
+        height: 400px;
+        width: 400px;
+        top: 40%;
+    }
+    .about-info {
+        padding: 0 ;
+    }
+    .about-info p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .services-card{
+        padding: 25px;
+        height: 362px;
+        margin: 30px;
+    }
+    .portfolio-main {
+        width: 74%;
+        margin: auto;
+    }
+    .contact-small{
+        display: block;
+        margin: 15px 0;
+    }
+    .contact-social {
+        margin-top: 40px !important;
+        margin: auto;
+    }
+    form {
+        text-align: center;
+    }
+    form input[type='submit'] {
+        width: 40%;
+    }
+    .choose-card {
+        margin: 30px;
+    }
+}
+@media(max-width:575px) {
+    .portfolio-main {
+        width: 69%;
+        margin: auto;
+    }
+    .circle-chart {
+        width: 100%;
+    }
+    .skils-details {
+        margin-bottom: 5px;
+    }
+    .skils-details p{
+        padding: 0;
+    }
+
+}
+@media(max-width:450px) {
+    .portfolio-main:hover h4 {
+        top: 43%;
+    }
+    .portfolio-main h4 {
+        font-size: 12px;
+    }
+    .portfolio-main .btn-portfolio {
+        font-size: 8px;
+    }
+    .contact-info-last:hover {
+        transform: scale(1);
+    }
+}
+@media(max-width:320px) {
+    .services::before {
+        height: 300px;
+        width: 300px;
+    }
+    .services::after {
+        height: 100px;
+        width: 100px;
+    }
+}
+@media(max-width:320px) {
+    .banner::before {
+        height: 200px;
+        width: 200px;
+    }
+    .banner::after {
+        height: 100px;
+        width: 100px;
+    }
+    .services::before {
+        height: 200px;
+        width: 200px;
+    }
+    .services::after {
+        height: 100px;
+        width: 100px;
+    }
+    .about-info p {
+        font-size: 15px;
+    }
+    .services-head .title::after {
+        bottom: -50px;
+        font-size: 15px;
+    }
+    .services-head .title::before {
+        bottom: -36px;
+    }
+    .services-card-content p{
+       font-size: 12px;
+    }
+    .contact-social ul li a i {
+        font-size: 22px;
+    }
+    .email-p{
+        font-size: 14px;
+    }
+}
